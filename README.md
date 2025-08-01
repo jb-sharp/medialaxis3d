@@ -93,4 +93,4 @@ or use it to return the distance as well.
 >>> napari.run()
 ```
 
-<img src="screenshots/example_nodist1.png" width="32%"/> <img src="screenshots/example_dist2.png" width="32%"/> <img src="screenshots/example_dist3.png" width="32%"/>
+<img src="https://github.com/jb-sharp/medialaxis3d/blob/main/screenshots/example_nodist1.png" width="32%"/> <img src="https://github.com/jb-sharp/medialaxis3d/blob/main/screenshots/example_dist2.png" width="32%"/> <img src="https://github.com/jb-sharp/medialaxis3d/blob/main/screenshots/example_dist3.png" width="32%"/>

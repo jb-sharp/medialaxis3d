@@ -16,8 +16,9 @@ classifiers = [
 
   "Development Status :: 4 - Beta",
 
-  "Intended Audience :: Science/Researche",
-  "Topic :: Binary skeletonization :: Image processing",
+  "Intended Audience :: Science/Research",
+
+  "Topic :: Scientific/Engineering :: Image Processing",
 
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.8",
@@ -40,12 +41,13 @@ dependencies = [
 [project.optional-dependencies]
 visualization = ["napari>=0.5.6"]
 
-#[project.urls]
-#"Homepage" = "https://github.com/pypa/sampleproject"
-#"Bug Reports" = "https://github.com/pypa/sampleproject/issues"
+[project.urls]
+"Homepage" = "https://github.com/jb-sharp/medialaxis3d"
+"Bug Reports" = "https://github.com/jb-sharp/medialaxis3d/issues"
 #"Funding" = "https://donate.pypi.org"
 #"Say Thanks!" = "http://saythanks.io/to/example"
-#"Source" = "https://github.com/pypa/sampleproject/"
+"Source" = "https://github.com/jb-sharp/medialaxis3d"
 
 [tool.setuptools]
+packages = ['medialaxis3d']
 package-data = { "medialaxis3d.tables" = ["*.npz"] }
