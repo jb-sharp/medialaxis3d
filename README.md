@@ -48,7 +48,7 @@ Use without returning the distance.
 >>> napari.run()
 ```
 
-<img src="screenshots/example_nodist1.png" width="33%"/> <img src="screenshots/example_nodist2.png" width="33%"/> <img src="screenshots/example_nodist3.png" width="33%"/>
+<img src="screenshots/example_nodist1.png" width="32%"/> <img src="screenshots/example_nodist2.png" width="32%"/> <img src="screenshots/example_nodist3.png" width="32%"/>
 
 Use returning the distance.
 
@@ -73,4 +73,4 @@ Use returning the distance.
 >>> napari.run()
 ```
 
-<img src="screenshots/example_nodist1.png" width="33%"/> <img src="screenshots/example_dist2.png" width="33%"/> <img src="screenshots/example_dist3.png" width="33%"/>
+<img src="screenshots/example_nodist1.png" width="32%"/> <img src="screenshots/example_dist2.png" width="32%"/> <img src="screenshots/example_dist3.png" width="32%"/>
