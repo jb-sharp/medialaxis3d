@@ -7,7 +7,7 @@ Top-level package for Medial Axis Transform 3D.
 # medialaxis3d/__init__.py
 
 __app_name__ = "medialaxis3d"
-__version__ = "1.0.3"
+__version__ = "1.0.2"
 
 (
     SUCCESS,
@@ -164,11 +164,13 @@ def medial_axis_3d(image, mask = None, return_distance = False, connectivity = 2
     # 3. Keep if # voxels in neighborhood is 2 or less
     # Note that table is independent of image and indeed it is precomputed
 
-    foreground = np.load(files('medialaxis3d.tables').joinpath("foreground.npz"))['table']
-    euler27 = np.load(files('medialaxis3d.tables').joinpath("euler27.npz"))['table']
-    euler19 = np.load(files('medialaxis3d.tables').joinpath("euler19.npz"))['table']
-    euler7 = np.load(files('medialaxis3d.tables').joinpath("euler7.npz"))['table']
-    lessthan2 = np.load(files('medialaxis3d.tables').joinpath("lessthan2.npz"))['table']
+    luts = np.load(files('medialaxis3d.luts').joinpath("luts.npz"))
+    foreground = luts['foreground']
+    euler27 = luts['euler27']
+    euler19 = luts['euler19']
+    euler7  = luts['euler7']
+    lessthan2 = luts['lessthan2']
+    cornerness_table = luts['corners']
 
     connections = {27: euler27,
                    19: euler19,
@@ -201,8 +203,6 @@ def medial_axis_3d(image, mask = None, return_distance = False, connectivity = 2
     # We use a cornerness_table lookup table where the score of a
     # configuration is the number of background (0-value) pixels in the
     # 3x3x3 neighborhood
-
-    cornerness_table = np.load(files('medialaxis3d.tables').joinpath("ctable.npz"))['ctable']
 
     corner_score = _table_lookup(masked_image, cornerness_table)
 

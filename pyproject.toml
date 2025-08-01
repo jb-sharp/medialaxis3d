@@ -49,7 +49,7 @@ visualization = ["napari>=0.5.6"]
 "Source" = "https://github.com/jb-sharp/medialaxis3d"
 
 [tool.setuptools]
-package-data = { "medialaxis3d.tables" = ["*.npz"] }
+package-data = { "medialaxis3d.luts" = ["*.npz"] }
 
 #[[tool.setuptools.ext-modules]]
 #name = "skeletonize_cy"
