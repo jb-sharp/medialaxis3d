@@ -46,4 +46,4 @@ WIP
 >>> napari.run()
 ```
 
-![example1](example_nodist1.png "title-1") ![example2](example_nodist2.png "title-2")
+![example1](screenshots/example_nodist1.png "title-1") ![example2](screenshots/example_nodist2.png "title-2")
