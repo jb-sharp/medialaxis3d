@@ -46,4 +46,4 @@ WIP
 >>> napari.run()
 ```
 
-<img src="screenshots/example_nodist1.png" width="425"/> <img src="screenshots/example_nodist2.png" width="425"/>
+<img src="screenshots/example_nodist1.png" width="30%"/> <img src="screenshots/example_nodist2.png" width="30%"/>
