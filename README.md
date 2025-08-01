@@ -15,6 +15,7 @@ Automatically installed with `pip`:
 - `numpy`
 - `scipy`
 - `cython`
+
 Optional only for visualization
 
 - `napari`
