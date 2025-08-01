@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools", "Cython", "numpy"]
+requires = ["setuptools", "wheel", "cython", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = 'medialaxis3d'
-version = '1.0.2'
+version = '1.0.3'
 description = 'Module to perform 3D skeletonization using Medial Axis Transform'
 keywords = ["MAT", "skeletonization", "3D"]
 readme = {file = "README.md", content-type = "text/markdown"}
@@ -49,5 +49,10 @@ visualization = ["napari>=0.5.6"]
 "Source" = "https://github.com/jb-sharp/medialaxis3d"
 
 [tool.setuptools]
-packages = ['medialaxis3d']
 package-data = { "medialaxis3d.tables" = ["*.npz"] }
+
+#[[tool.setuptools.ext-modules]]
+#name = "skeletonize_cy"
+#sources = ["medialaxis3d/skeletonize_cy.c"]
+#define-macros=[('NPY_NO_DEPRECATED_API', 'NPY_1_7_API_VERSION')]
+#include-dirs = ["/home/giovanni/anaconda3/envs/ricci/lib/python3.13/site-packages/numpy/_core/include"]

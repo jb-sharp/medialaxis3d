@@ -1,1 +1,2 @@
-include medialaxis3d/*.pyx
+include src/medialaxis3d/*.pyx
+include setup.py

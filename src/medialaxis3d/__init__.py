@@ -7,7 +7,7 @@ Top-level package for Medial Axis Transform 3D.
 # medialaxis3d/__init__.py
 
 __app_name__ = "medialaxis3d"
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 (
     SUCCESS,
