@@ -26,7 +26,7 @@ WIP
 
 ## Quickstart
 
-Use without returning the distance.
+Use it without returning the medial distance.
 
 ```Python
 >>> import numpy as np
@@ -61,7 +61,7 @@ Use without returning the distance.
 
 <img src="screenshots/example_nodist1.png" width="32%"/> <img src="screenshots/example_nodist2.png" width="32%"/> <img src="screenshots/example_nodist3.png" width="32%"/>
 
-Use returning the distance.
+or use it to return the distance as well.
 
 ```Python
 >>> import numpy as np
