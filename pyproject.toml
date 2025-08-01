@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'medialaxis3d'
-version = '1.0.0'
+version = '1.0.2'
 description = 'Module to perform 3D skeletonization using Medial Axis Transform'
 keywords = ["MAT", "skeletonization", "3D"]
 readme = {file = "README.md", content-type = "text/markdown"}
