@@ -1,7 +1,6 @@
 import numpy as np
 import skimage as ski
 import medialaxis3d
-import napari
 
 rng = np.random.default_rng(1278)
 
