@@ -147,7 +147,7 @@ def medial_axis_3d(image, mask = None, return_distance = False, connectivity = 2
        pass.
 
     """
-    global _eight_connect
+    #global _eight_connect
     if mask is None:
         masked_image = image.astype(bool).copy()
     else:
