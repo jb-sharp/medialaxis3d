@@ -12,4 +12,6 @@ image = ski.data.binary_blobs(length = 128,
 
 skeleton, distance = medialaxis3d.medial_axis_3d(image, return_distance = True, size = 8, rng = rng)
 
-assert skeleton.shape == image.shape
+
+def test_skel_size():
+    assert skeleton.shape == image.shape
